@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     include: ["react-date-range"],
   },
+  server: {
+    host: "0.0.0.0", // Bind to all network interfaces
+    port: 5173, // You can specify a port that Render.com expects, e.g., 10000
+  },
 });
