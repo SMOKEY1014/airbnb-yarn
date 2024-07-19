@@ -18,7 +18,7 @@ export default function PlaceGallery({ place }) {
                     </div>
                     {place?.photos?.length > 0 && place.photos.map(photo => (
                         <div key={photo}>
-                            <img src={'http://localhost:4000/uploads/' + photo} alt={place.title} />
+                            <img src={'https://airbnb-yarn-api.onrender.com/uploads/' + photo} alt={place.title} />
                         </div>
                     ))}
                 </div>
@@ -35,7 +35,7 @@ export default function PlaceGallery({ place }) {
                             <img
                                 onClick={() => { setShowAllPhotos(true); }}
                                 className="cursor-pointer object-cover w-full h-full rounded-tl-2xl rounded-bl-2xl"
-                                src={'http://localhost:4000/uploads/' + place.photos[0]}
+                                src={'https://airbnb-yarn-api.onrender.com/uploads/' + place.photos[0]}
                                 alt={place.title}
                             />
                         </div>
@@ -46,7 +46,7 @@ export default function PlaceGallery({ place }) {
                         <img
                             onClick={() => { setShowAllPhotos(true); }}
                             className="cursor-pointer object-cover w-full h-full"
-                            src={'http://localhost:4000/uploads/' + place.photos[1]}
+                            src={'https://airbnb-yarn-api.onrender.com/uploads/' + place.photos[1]}
                             alt={place.title}
                         />
                     )}
@@ -54,7 +54,7 @@ export default function PlaceGallery({ place }) {
                         <img
                             onClick={() => { setShowAllPhotos(true); }}
                             className="cursor-pointer object-cover w-full h-full"
-                            src={'http://localhost:4000/uploads/' + place.photos[2]}
+                            src={'https://airbnb-yarn-api.onrender.com/uploads/' + place.photos[2]}
                             alt={place.title}
                         />
                     )}
@@ -62,7 +62,7 @@ export default function PlaceGallery({ place }) {
                         <img
                             onClick={() => { setShowAllPhotos(true); }}
                             className="cursor-pointer object-cover w-full h-full"
-                            src={'http://localhost:4000/uploads/' + place.photos[3]}
+                            src={'https://airbnb-yarn-api.onrender.com/uploads/' + place.photos[3]}
                             alt={place.title}
                         />
                     )}
@@ -71,7 +71,7 @@ export default function PlaceGallery({ place }) {
                             <img
                                 onClick={() => { setShowAllPhotos(true); }}
                                 className="cursor-pointer object-cover w-full h-full"
-                                src={'http://localhost:4000/uploads/' + place.photos[4]}
+                                src={'https://airbnb-yarn-api.onrender.com/uploads/' + place.photos[4]}
                                 alt={place.title}
                             />
                            <button onClick={() => setShowAllPhotos(true)} className=" flex gap-1 absolute bottom-9 right-2 py-2 px-4 bg-white rounded-2xl shadow shadow-md shadow-gray-500">
