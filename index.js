@@ -24,9 +24,9 @@ const path = require("path");
 app.use(express.static(path.resolve(__dirname, "./client/dist")));
 console.log(__dirname);
 // Define a simple route to serve the index.html file
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "./client/dist/index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./client/dist/index.html"));
+});
 // app.get("/", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "./client/dist/index.html"));
 // });
