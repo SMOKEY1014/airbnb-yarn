@@ -9,7 +9,7 @@ export default function BookingWidget({ place, setDate, setNumOfNights }) {
     const [checkOut, setCheckOut] = useState('');
     const [numberOfGuests, setNumberOfGuests] = useState(1);
     const [name, setName] = useState('');
-    const [phone, setPhone] = useState('');
+    const [phone, setPhone] = useState('0000000000');
     const [redirect, setRedirect] = useState('');
     const { user } = useContext(UserContext);
 
@@ -61,7 +61,7 @@ export default function BookingWidget({ place, setDate, setNumOfNights }) {
         };
         const response = await axios.post("/bookings", data);
         const bookingId = response.data._id;
-        setRedirect(`/account/bookings/${bookingId}`);
+        setRedirect(`/account/bookings`);
     }
 
     if (redirect) {

@@ -14,18 +14,22 @@ export default function BookingsPage() {
         })
     },[])
 
+    if (!bookings) {
+        return 'No Bookings Done Yet'
+    }
+
 
     return (
         <div>
             <AccountNav/>
             <div className="">
                 {bookings.length > 0 && bookings.map(booking => (
-                    <Link to={`/account/bookings/${booking._id}`} className="flex gap-4 bg-gray-200 rounded-2xl overflow-hidden">
+                    <Link to={`/account/bookings/${booking._id}`} className="flex gap-4 bg-gray-200 rounded-2xl my-4 overflow-hidden">
                         <div className="w-48">
-                            <PlaceImg place={booking.place} />
+                            <PlaceImg place={booking?.place} />
                         </div>
                         <div className="py-3 pr-3 grow">
-                            <h2 className="text-xl">{booking.place.title}</h2>
+                            <h2 className="text-xl">{booking.place?.title}</h2>
                             
                             <div className="text-xl">
                                 <div className="flex gap-1 mb-2 mt-4 text-gray-500">
