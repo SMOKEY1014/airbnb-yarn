@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "yarn run build --prefix ./client",
+    "build": "yarn install --prefix ./client",
     "start-server": "node index.js",
     "start-client": "npm run dev --prefix ./client",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\""
