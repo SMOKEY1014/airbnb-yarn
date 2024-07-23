@@ -18,6 +18,20 @@ const app = express();
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET || "randomstring";
 
+////////////////// For deployment /////////////////
+const path = require("path");
+// Serve static files from the 'client/dist' directory
+app.use(express.static(path.resolve(__dirname, "./client/dist")));
+console.log(__dirname);
+// Define a simple route to serve the index.html file
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "./client/dist/index.html"));
+// });
+// app.get("/", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "./client/dist/index.html"));
+// });
+///////////////////////////////////////////////////
+
 app.use(express.json());
 app.use(CookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
