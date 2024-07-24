@@ -47,7 +47,7 @@ export default function Listing() {
                         <div className="mb-2 border-t border-gray-300 h-60 flex gap-8 p-4 justify-between">
                             <Link to={'/place/' + place._id} className="flex gap-8">
                                 {place.photos?.[0] && (
-                                    <img className="rounded-2xl object-cover h-full aspect-video" src={'http://localhost:4000/uploads/' + place.photos?.[0]} alt="" />
+                                    <img className="rounded-2xl object-cover h-full aspect-video" src={'https://smk-project.onrender.com/uploads/' + place.photos?.[0]} alt="" />
                                 )}
                                 <div className="flex justify-between w-full">
                                     <div className="flex flex-col justify-between">
