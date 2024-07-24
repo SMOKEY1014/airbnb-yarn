@@ -23,28 +23,17 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .relative {
-        position: relative;
+      .hideScroll {
+        overflow-y: scroll;
       }
 
-      .active::after,
-      .inactive::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 40px; /* Set the desired width for the bottom border */
-        height: 4px; /* Set the desired height for the bottom border */
+      .hideScroll::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
       }
 
-      .active::after {
-        background-color: black;
-      }
-
-      .inactive::after {
-        background-color: transparent;
+      .hideScroll {
+        -ms-overflow-style: none; /* For Internet Explorer and Edge */
+        scrollbar-width: none; /* For Firefox */
       }
     </style>
 
