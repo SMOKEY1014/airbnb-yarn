@@ -87,14 +87,14 @@ export default function BookingWidget({ place, setDate, setNumOfNights }) {
             </div>
             <div className="border rounded-2xl mt-4">
                 <div className="flex">
-                    <div className=" py-3 px-4 border-b-">
+                    <div className=" py-3 px-4 border-b- flex-col">
                         <label className="text-sm" >CHECKIN</label>
                         <input className="text-gray-400"
                             value={checkIn} 
                             onChange={ev => setCheckIn(ev.target.value)} 
                             type="date"/>
                     </div>
-                    <div className=" py-3 px-4 border-l ">
+                    <div className=" py-3 px-4 border-l flex-col">
                         <label className="text-sm" >CHECKOUT</label>
                         <input className="text-gray-400"
                             value={checkOut} 

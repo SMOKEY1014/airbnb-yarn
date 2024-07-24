@@ -10,7 +10,7 @@ export default function Layout() {
     const isListingPage = location.pathname === "/places";
 
     return (
-        <div className="w-screen flex flex-col ">
+        <div className="w-screen min-h-screen flex flex-col ">
             <div className="py-4 px-16 w-full">
                 {isIndexPage? <HeaderIndex/> : <Header />}
                 <Outlet />
