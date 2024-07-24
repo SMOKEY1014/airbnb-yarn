@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="bg-gray-200 w-screen py-16 -ml-16 -mb-4 px-16  text-gray-500">
 
       
-      <div className="grid grid-cols-2 md:grid-cols-3 ld:grid-cols-4 gap-x-6 gap-y-8 border-gray-600">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 border-gray-600">
         <div>
           <h2 className='text-black text-xl'>Support</h2>
           <p className='pt-4'>Help Center</p>
