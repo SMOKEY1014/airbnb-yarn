@@ -7,7 +7,7 @@ export default function PlaceImg({place, index=0,className}) {
     }
     return (
     
-        <img className={className} src={'https://smk-project.onrender.com/uploads/' + place?.photos?.[index]} alt="" />
+        <img className={className} src={'https://airbnb-yarn.onrender.com/uploads/' + place?.photos?.[index]} alt="" />
 
     )
 }

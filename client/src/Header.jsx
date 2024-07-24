@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <header className='cursor-pointer flex justify-between pt-2'>
       <Link to={'/'} className='flex item-center gap-1'>
-        <img className='h-10' src="https://smk-project.onrender.com/uploads/Airbnb-Logo.wine.png" alt="" />
+        <img className='h-10' src="https://airbnb-yarn.onrender.com/uploads/Airbnb-Logo.wine.png" alt="" />
       </Link>
       {/* <Header2/> */}
       {/* <HeaderMid1 /> */}

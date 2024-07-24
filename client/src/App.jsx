@@ -16,7 +16,7 @@ import BookingPage from './pages/BookingPage.jsx'
 import Listing from './pages/Listing.jsx'
 
 // axios.defaults.baseURL = 'http://localhost:4000';
-axios.defaults.baseURL = 'https://smk-project.onrender.com';
+axios.defaults.baseURL = 'https://airbnb-yarn.onrender.com';
 axios.defaults.withCredentials = true;
 
 function App() {

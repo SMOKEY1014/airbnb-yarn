@@ -57,7 +57,7 @@ export default function PlacesPage() {
                         <div className="mb-2 p-4 border-t border-gray-300 h-60 flex gap-8 justify-between">
                             <div className="flex gap-8">
                                 {place.photos?.[0] && (
-                                    <img className="rounded-2xl object-cover h-full aspect-video" src={'https://smk-project.onrender.com/uploads/' + place.photos?.[0]} alt="" />
+                                    <img className="rounded-2xl object-cover h-full aspect-video" src={'https://airbnb-yarn.onrender.com/uploads/' + place.photos?.[0]} alt="" />
                                 )}
                                 <div className="flex justify-between w-full">
                                     <div className="flex flex-col justify-between">
