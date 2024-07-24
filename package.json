@@ -8,7 +8,7 @@
     "build-client": "npm run build --prefix ./client",
     "install-client": "npm install --prefix ./client",
     "build": "concurrently \"npm run install-client\" ",
-    "start": "concurrently \"npm run start-server\" \"npm run build-client\""
+    "start": "npm run start-server"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
