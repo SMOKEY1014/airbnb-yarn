@@ -7,8 +7,9 @@
     "start-client": "npm run dev --prefix ./client",
     "build-client": "npm run build --prefix ./client",
     "install-client": "npm install --prefix ./client",
-    "build": "concurrently \"npm run install-client\" ",
-    "start": "npm run start-server"
+    "build": "concurrently \"npm run install-client\"",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "install-deps": "concurrently \"npm run install-client\" \"npm install\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

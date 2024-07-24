@@ -10,3 +10,7 @@ chmod +x ./node_modules/.bin/concurrently
 
 # Build the client
 npm run build-client
+
+
+
+
