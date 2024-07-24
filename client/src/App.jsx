@@ -28,6 +28,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Index />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Index />} />
           <Route path="/register" element={<Register />} />
           <Route path="/account" element={<ProfilePage />} />
           <Route path="/places" element={<Listing />} />

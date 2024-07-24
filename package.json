@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "yarn install --prefix ./client",
     "start-server": "node index.js",
     "start-client": "npm run dev --prefix ./client",
-    "start": "concurrently \"npm run start-server\" \"npm run start-client\""
+    "build-client": "npm run build --prefix ./client",
+    "install-client": "npm install --prefix ./client",
+    "build": "concurrently \"npm run install-client\" ",
+    "start": "concurrently \"npm run start-server\" \"npm run build-client\"",
+    "install-deps": "concurrently \"npm run install-client\" \"npm install\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
