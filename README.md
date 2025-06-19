@@ -8,7 +8,7 @@ Welcome to the **Airbnb Clone** — a modern web application that replicates the
 
 ## 📸 Preview
 
-![Airbnb Clone Screenshot](https://postimg.cc/305Why2k)
+![Airbnb Clone Screenshot](https://i.postimg.cc/SRj9WCsf/unnamed-3.png)
 
 ---
 
